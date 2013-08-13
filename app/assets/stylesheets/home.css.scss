@@ -1,0 +1,57 @@
+// Place all the styles related to the Homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.body {
+	margin: 0px;
+	font-family: helvetica, sans-serif;
+}
+
+.container {
+	width: 100%;
+	font-family: helvetica, sans-serif;
+}
+
+header {
+	font-family: helvetica, sans-serif;
+	position: relative;
+	width: 960px;
+	border-bottom: solid grey 1px;
+	padding-bottom: 12px;
+	margin: 15px auto;
+}
+
+header nav {
+	text-align: right;
+	padding-top: 28px;
+}
+
+.greeting, .about, .work, .contact {
+	width: 960px;
+	margin: 0% auto;
+	text-align: center; 
+}
+
+.image {
+	position: relative;
+	height: 480px;
+	overflow: hidden;
+}
+
+.image img {
+	display: inline-block;
+	position: relative;
+	height: auto;
+	width: 100%;
+	line-height: 1;
+	-webkit-filter: blur(2px) opacity(0.9);
+}
+
+span {
+	font-size: 36px;
+	text-align: center;
+	position: relative;
+	margin: 25% auto;
+}
