@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails'
 
 group :development, :test do
-	gem 'pg', '0.12.2'
+	gem 'sqlite3'
 	gem 'rspec-rails'
 	gem 'pry-rails'
 end
