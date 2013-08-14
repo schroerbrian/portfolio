@@ -4,34 +4,59 @@
 
 
 
-.body {
+body {
 	margin: 0px;
 	font-family: helvetica, sans-serif;
 }
 
 .container {
 	width: 100%;
-	font-family: helvetica, sans-serif;
+	position: absolute;
+	top: 65px;
 }
 
 header {
+	background: rgba(22, 160, 133, 0.9);
 	font-family: helvetica, sans-serif;
-	position: relative;
-	width: 960px;
-	border-bottom: solid grey 1px;
+	text-transform: uppercase;
+	position: fixed;
+	height: 65px;
+	width: 100%;
 	padding-bottom: 12px;
-	margin: 15px auto;
-}
+	margin: 0px auto 15px;
+	z-index: 999;
+/*	box-shadow: 0 10px 0 rgba(0,0,0,0.05);
+*/}
 
 header nav {
-	text-align: right;
-	padding-top: 28px;
+	max-width: 960px;
+	text-align: center;
+	padding-top: 32.5px;
+	margin: 0 auto;
 }
 
-.greeting, .about, .work, .contact {
+.greeting, .about-me, .work, .contact {
 	width: 960px;
+	height: 500px;
 	margin: 0% auto;
 	text-align: center; 
+}
+
+h1 {
+	padding: 100px 0 10px;
+	font-size: 45px;
+	border-bottom: 1px solid grey
+}
+
+h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: -18px;
+}
+
+p {
+	margin: 50px 22% 0 22%;
+	text-align: justify;
 }
 
 .image {
@@ -49,9 +74,14 @@ header nav {
 	-webkit-filter: blur(2px) opacity(0.9);
 }
 
-span {
-	font-size: 36px;
-	text-align: center;
-	position: relative;
-	margin: 25% auto;
+
+.about-me {
+	background: rgba(219, 225, 229, 1.0);
+	width: 100%;
+}
+
+.about-me h1 {
+	border: none;
+	padding-top: 50px;
+	text-transform: uppercase; 
 }
