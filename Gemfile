@@ -13,6 +13,8 @@ group :production do
 	gem 'pg', '0.15.1'
 end
 
+#HAML
+gem 'haml-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

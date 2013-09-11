@@ -3,20 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
+	height: 100%;
+	width: 100%;
 	margin: 0px;
 	font-family: minion-pro, Georgia, Times new roman, serif;
-	position: absolute;
-}
-
-a {
-	text-decoration: none;
-	color: #333;
-	margin: 0px;
-	font-size: 18px;
-}
-
-p {
-	margin: 0;
 }
 
 .container {
@@ -24,92 +14,129 @@ p {
 	height: 100%;	
 }
 
+//HEADER 
 header {
-	background: rgba(151, 198, 231, 1);
-	font-family: helvetica, sans-serif;
+	background: rgba(181, 220, 245, 1);
+	font-family: "roboto", sans-serif;
 	text-transform: uppercase;
 	position: fixed;
 	height: 100%;
 	width: 350px;
 	z-index: 999;
+	nav {
+		position: relative;
+		top: 25%;
+		line-height: 35px;
+		.header-links {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			text-transform: uppercase;
+			list-style: none;
+			font-size: 19px;
+			font-weight: 400;
+			letter-spacing: 2px;
+			color: white;
+		}
+	}
 }
 
-header nav {
-	text-align: center;
-	margin: 0;
-}
-
+//SECTIONS 
 .greeting, .about-me, .work, .contact {
-	background: rgba(219, 225, 229, 1.0);
+	position: absolute;
 	width: 100%;
-	height: 800px;
-	margin: 0;
 	text-align: center; 
 }
 
-h1 {
-	padding: 0px;
-	font-size: 45px;
-	font-family: brandon-grotesque, Helvetica neue, Arial, sans-serif;
-	border-bottom: 1px solid grey
+.content {
+	margin: 75px 0 0 370px;
+	color: rgba(150, 150, 150, 1);
+	h1 {
+		font-family: "roboto", sans-serif;
+		font-size: 50px;
+		font-weight: 500;
+	}
+	p {
+		margin: 0 105px 0 105px;
+		text-align: center;
+		line-height: 30px;
+		font-size: 17px;
+	}
 }
+// .greeting p {
+// 	text-align: justify;
+// }
 
-h3 {
-	text-transform: uppercase;
-	font-weight: normal;
-}
+// a {
+// 	text-decoration: none;
+// 	color: #333;
+// 	margin: 0px;
+// 	font-size: 18px;
+// }
 
-.greeting p {
-	text-align: justify;
-}
+// p {
+// 	margin: 0;
+// }
 
-.image {
-	position: relative;
-	height: 480px;
-	overflow: hidden;
-}
+// h1 {
+// 	padding: 0px;
+// 	font-size: 45px;
+// 	font-family: brandon-grotesque, Helvetica neue, Arial, sans-serif;
+// 	border-bottom: 1px solid grey
+// }
 
-.image img {
-	display: inline-block;
-	position: relative;
-	height: auto;
-	width: 100%;
-	line-height: 1;
-	-webkit-filter: blur(2px) opacity(0.9);
-}
+// h3 {
+// 	text-transform: uppercase;
+// 	font-weight: normal;
+// }
 
-.about-me {
-	background: white;
-	width: 100%;
-}
+// .about-me {
+// 	background: white;
+// 	width: 100%;
+// }
 
-.about-me h1 {
-	border: none;
-	padding-top: 0;
-	text-transform: uppercase; 
-}
+// .about-me h1 {
+// 	border: none;
+// 	padding-top: 0;
+// 	text-transform: uppercase; 
+// }
 
-ul {
-	list-style: none;
-}
+// ul {
+// 	list-style: none;
+// }
 
-li {
-	width: 33.3%;
-	float: left;
-	margin: 0;
-	position: relative;
-}
+// li {
+// 	width: 33.3%;
+// 	float: left;
+// 	margin: 0;
+// 	position: relative;
+// }
 
-ul img {
-	width: 100%;
-	height: auto;
-	float: left;
-	&:hover { opacity: 0.8; }
-}
+// ul img {
+// 	width: 100%;
+// 	height: auto;
+// 	float: left;
+// 	&:hover { opacity: 0.8; }
+// }
 
-.contact {
-	background: white;
-}
-.contact h1 {
-	border: none;
-}
+// .contact {
+// 	background: white;
+// }
+// .contact h1 {
+// 	border: none;
+// }
+
+// .image {
+// 	position: relative;
+// 	height: 480px;
+// 	overflow: hidden;
+// }
+
+// .image img {
+// 	display: inline-block;
+// 	position: relative;
+// 	height: auto;
+// 	width: 100%;
+// 	line-height: 1;
+// 	-webkit-filter: blur(2px) opacity(0.9);
+// }
