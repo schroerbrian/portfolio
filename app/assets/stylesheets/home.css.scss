@@ -23,23 +23,60 @@ header {
 	height: 100%;
 	width: 350px;
 	z-index: 999;
-	nav {
-		position: relative;
-		top: 25%;
-		line-height: 35px;
-		.header-links {
-			margin: 0;
-			padding: 0;
-			text-align: center;
-			text-transform: uppercase;
-			list-style: none;
-			font-size: 19px;
-			font-weight: 400;
-			letter-spacing: 2px;
+}
+
+.view-links {
+	position: relative;
+	top: 25%;
+	line-height: 35px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+	list-style: none;
+	font-size: 19px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: white;
+	li {
+		a {
+			text-decoration: none;
 			color: white;
 		}
 	}
+	li:hover {
+		background-color: white;
+		color: rgba(150, 150, 150, 1);
+		a {
+			text-decoration: none;
+			color: rgba(150, 150, 150, 1);
+		}
+	}
 }
+
+.social-links {
+	position: absolute;
+	top: 90%;
+	ul li {
+			display: inline;
+			a {
+				text-decoration: none;
+				color: white;
+			}
+			li:hover {
+			background-color: white;
+			color: rgba(150, 150, 150, 1);
+			a {
+				text-decoration: none;
+				color: rgba(150, 150, 150, 1);
+			}
+		}
+	}
+}
+
 
 //SECTIONS 
 .greeting, .about-me, .work, .contact {
@@ -51,10 +88,11 @@ header {
 .content {
 	margin: 75px 0 0 370px;
 	color: rgba(150, 150, 150, 1);
+	letter-spacing: 1px;
 	h1 {
 		font-family: "roboto", sans-serif;
 		font-size: 50px;
-		font-weight: 500;
+		font-weight: 400;
 	}
 	p {
 		margin: 0 105px 0 105px;

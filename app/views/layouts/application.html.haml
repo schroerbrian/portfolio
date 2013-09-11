@@ -3,16 +3,32 @@
   %head
     %title Portfolio
     %link{:href => "http://fonts.googleapis.com/css?family=Roboto:400,100,700", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", :rel=>"stylesheet"}
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
     .container
       %header
-        %nav
+        %nav.view-links
           %ul.header-links
             %li Brian Schroer 
-            %li About
-            %li Work
-            %li Contact  
+            %li 
+              = link_to "About", "/"
+            %li 
+              = link_to "Work", work_path
+            %li
+              = link_to "Contact", contact_path
+        %nav.social-links
+          %ul
+            %li
+              = link_to "https://github.com/schroerbrian" do 
+                %i.icon-github
+            %li
+              = link_to "https://twitter.com/bumblingbees" do 
+                %i.icon-twitter
+            %li
+              = link_to "http://www.linkedin.com/in/bschroer" do 
+                %i.icon-linkedin   
+
       = yield
