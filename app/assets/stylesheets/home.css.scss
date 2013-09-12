@@ -7,11 +7,20 @@ body {
 	width: 100%;
 	margin: 0px;
 	font-family: minion-pro, Georgia, Times new roman, serif;
+	font-size: 17px;
+	color: rgba(150, 150, 150, 1);
+	letter-spacing: 1px;
+	text-align: center;
 }
 
-.container {
-	width: 100%;
-	height: 100%;	
+h1 {
+	font-family: "roboto", sans-serif;
+	font-size: 50px;
+	font-weight: 400;
+}
+
+p {
+	line-height: 30px;
 }
 
 //HEADER 
@@ -23,84 +32,78 @@ header {
 	height: 100%;
 	width: 350px;
 	z-index: 999;
+	font-weight: 400;
+	letter-spacing: 2px;
+	line-height: 35px;
+	color: white;
 }
 
 .view-links {
 	position: relative;
-	top: 25%;
-	line-height: 35px;
+	top: 10%;
 }
 
 ul {
-	margin: 0;
+	margin: 20% 0 0 0;
 	padding: 0;
-	text-align: center;
-	text-transform: uppercase;
 	list-style: none;
 	font-size: 19px;
-	font-weight: 400;
-	letter-spacing: 2px;
-	color: white;
-	li {
-		a {
+	a {
 			text-decoration: none;
 			color: white;
-		}
 	}
 	li:hover {
 		background-color: white;
-		color: rgba(150, 150, 150, 1);
 		a {
-			text-decoration: none;
 			color: rgba(150, 150, 150, 1);
 		}
 	}
 }
 
+//SOCIAL LINKS NAV
 .social-links {
 	position: absolute;
+	width: 100%;
 	top: 90%;
-	ul li {
+	.social-icon-list {
+		margin: 0px 115px;
+		li {
 			display: inline;
-			a {
-				text-decoration: none;
-				color: white;
+
+			i{
+				padding: 0 5px 0 9px;
 			}
-			li:hover {
-			background-color: white;
-			color: rgba(150, 150, 150, 1);
-			a {
-				text-decoration: none;
-				color: rgba(150, 150, 150, 1);
+			i:hover{
+				background-color: rgba(250, 250, 250, 0.6);
+				color: rgba(150, 150, 150, 0.8);
+				border-radius: 25%;
 			}
+		}
+		li:hover{
+		background-color: transparent;
 		}
 	}
 }
-
 
 //SECTIONS 
 .greeting, .about-me, .work, .contact {
 	position: absolute;
 	width: 100%;
-	text-align: center; 
 }
 
 .content {
 	margin: 75px 0 0 370px;
-	color: rgba(150, 150, 150, 1);
-	letter-spacing: 1px;
-	h1 {
-		font-family: "roboto", sans-serif;
-		font-size: 50px;
-		font-weight: 400;
-	}
 	p {
 		margin: 0 105px 0 105px;
-		text-align: center;
-		line-height: 30px;
-		font-size: 17px;
 	}
 }
+
+//WORK 
+
+ul.work-examples {
+	margin: 0px;
+}
+
 // .greeting p {
 // 	text-align: justify;
 // }
