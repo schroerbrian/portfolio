@@ -1,10 +1,22 @@
 %section.contact
   .content
     %h1 Get in touch
-    %p
-      Questions? Comments? Complaints?
-      %ul
-      %li Twitter
-      %li LinkedIn
-      %li GitHub
-
+    %span.contact-me 
+      Questions? Comments? Complaints? </br>
+    %span 
+      Please don't hesitate to get in touch. 
+    %br
+    %br 
+    %ul.contact-page-links-list
+      %li.contact-page-link-items
+        = link_to "mailto:schroer.brian@gmail.com" do 
+          %span Email me
+      %li.contact-page-link-items
+        = link_to "https://twitter.com/bumblingbees" do 
+          %span Tweet at me 
+      %li.contact-page-link-items
+        = link_to "http://www.linkedin.com/in/bschroer" do 
+          %span LinkedIn with me
+      %li.contact-page-link-items
+        = link_to "https://github.com/schroerbrian" do 
+          %span Check out my work on GitHub   
