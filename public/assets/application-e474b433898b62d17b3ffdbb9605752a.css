@@ -1,0 +1,127 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+.content span {
+  position: relative;
+  top: 25px; }
+
+.content .contact-page-links-list {
+  margin: 0 0 0 0; }
+
+.contact-page-link-items a {
+  color: #969696; }
+  .contact-page-link-items a:hover {
+    color: rgba(150, 150, 150, 0.8); }
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  font-family: minion-pro, Georgia, Times new roman, serif;
+  font-size: 19px;
+  color: #969696;
+  letter-spacing: 1px;
+  text-align: center; }
+
+h1 {
+  font-family: minion-pro, Georgia, Times new roman, serif;
+  font-size: 45px;
+  font-weight: 400; }
+
+p {
+  line-height: 30px; }
+
+.content {
+  margin: 40px 0 0 370px; }
+  .content p {
+    margin: 0 105px 0 105px; }
+  .content h1 {
+    font-style: italic; }
+
+.greeting, .about-me, .work, .contact {
+  position: absolute;
+  width: 100%; }
+.profile-pic {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  margin-bottom: 22px; }
+header {
+  background: #b5dcf5;
+  font-family: "roboto", sans-serif;
+  text-transform: uppercase;
+  position: fixed;
+  height: 100%;
+  width: 350px;
+  z-index: 999;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 35px;
+  color: white; }
+
+.view-links {
+  position: relative;
+  margin-top: 40px; }
+
+ul {
+  margin: 25% 0 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 19px; }
+  ul a {
+    text-decoration: none;
+    color: white; }
+  ul li:hover {
+    background-color: white; }
+    ul li:hover a {
+      color: #969696; }
+
+.social-links {
+  position: absolute;
+  width: 100%;
+  top: 90%; }
+  .social-links .social-icon-list {
+    margin: 0; }
+    .social-links .social-icon-list li {
+      display: inline; }
+      .social-links .social-icon-list li i {
+        padding: 0 5px 0 9px; }
+      .social-links .social-icon-list li i:hover {
+        background-color: rgba(250, 250, 250, 0.6);
+        color: rgba(150, 150, 150, 0.8);
+        border-radius: 25%; }
+    .social-links .social-icon-list li:hover {
+      background-color: transparent; }
+.work-title {
+  margin: 5% 0 5% 0;
+  font-size: 45px; }
+
+ul.work-examples {
+  margin: 0px; }
+  ul.work-examples h3.work-caption {
+    margin-bottom: 1px;
+    font-weight: 400; }
+  ul.work-examples a {
+    color: #969696; }
+
+li:hover
+img {
+  border-radius: 5%; }
+  li:hover
+  img:hover {
+    opacity: 0.8; }
+
+.project-image {
+  margin-bottom: 20px;
+  border: #969696 solid 5px;
+  border-radius: 5%; }
