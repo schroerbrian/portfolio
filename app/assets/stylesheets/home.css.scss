@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-	font-family: "roboto", sans-serif;
+	font-family: minion-pro, Georgia, Times new roman, serif;
 	font-size: 50px;
 	font-weight: 400;
 }
@@ -100,84 +100,32 @@ ul {
 
 //WORK 
 
-ul.work-examples {
-	margin: 0px;
+.work-title {
+	font-style: italic;
+	font-size: 40px;
 }
 
-// .greeting p {
-// 	text-align: justify;
-// }
+ul.work-examples {
+	margin: 0px;
+	&:hover { opacity: 0.8; }
+	img {
+		width: 65%;
+		height: auto;
+		// &:hover { opacity: 0.8; }
+	}
+	h3.work-caption {
+		margin-top: 1px;
+		font-weight: 400;
+	}
+	a{
+		color: rgba(150, 150, 150, 1);
+	}
+	a:hover {
+		// color: rgba(150, 150, 150, 0.8);
+	}
+}
 
-// a {
-// 	text-decoration: none;
-// 	color: #333;
-// 	margin: 0px;
-// 	font-size: 18px;
-// }
+li {
 
-// p {
-// 	margin: 0;
-// }
+}
 
-// h1 {
-// 	padding: 0px;
-// 	font-size: 45px;
-// 	font-family: brandon-grotesque, Helvetica neue, Arial, sans-serif;
-// 	border-bottom: 1px solid grey
-// }
-
-// h3 {
-// 	text-transform: uppercase;
-// 	font-weight: normal;
-// }
-
-// .about-me {
-// 	background: white;
-// 	width: 100%;
-// }
-
-// .about-me h1 {
-// 	border: none;
-// 	padding-top: 0;
-// 	text-transform: uppercase; 
-// }
-
-// ul {
-// 	list-style: none;
-// }
-
-// li {
-// 	width: 33.3%;
-// 	float: left;
-// 	margin: 0;
-// 	position: relative;
-// }
-
-// ul img {
-// 	width: 100%;
-// 	height: auto;
-// 	float: left;
-// 	&:hover { opacity: 0.8; }
-// }
-
-// .contact {
-// 	background: white;
-// }
-// .contact h1 {
-// 	border: none;
-// }
-
-// .image {
-// 	position: relative;
-// 	height: 480px;
-// 	overflow: hidden;
-// }
-
-// .image img {
-// 	display: inline-block;
-// 	position: relative;
-// 	height: auto;
-// 	width: 100%;
-// 	line-height: 1;
-// 	-webkit-filter: blur(2px) opacity(0.9);
-// }
