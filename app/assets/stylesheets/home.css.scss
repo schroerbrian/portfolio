@@ -23,6 +23,15 @@ p {
 	line-height: 30px;
 }
 
+.content {
+	margin: 40px 0 0 370px;
+	p {
+		margin: 0 105px 0 105px;
+	}
+	h1 {
+		font-style: italic;
+	}
+}
 
 //SECTIONS 
 .greeting, .about-me, .work, .contact {
@@ -30,11 +39,6 @@ p {
 	width: 100%;
 }
 
-.content {
-	margin: 75px 0 0 370px;
-	p {
-		margin: 0 105px 0 105px;
-	}
-}
+
 
 

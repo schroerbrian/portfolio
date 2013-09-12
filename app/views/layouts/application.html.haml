@@ -16,7 +16,7 @@
             %li 
               = link_to "About", "/"
             %li 
-              = link_to "Work", work_path
+              = link_to "Web Work", work_path
             %li
               = link_to "Contact", contact_path
         %nav.social-links
@@ -29,6 +29,9 @@
                 %i.icon-twitter
             %li.social-icons
               = link_to "http://www.linkedin.com/in/bschroer" do 
-                %i.icon-linkedin   
+                %i.icon-linkedin
+            %li.social-icons
+              = link_to "mailto:schroer.brian@gmail.com" do 
+                %i.icon-envelope-alt     
 
       = yield
