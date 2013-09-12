@@ -1,12 +1,13 @@
 %section.work
   .content
-    %h1.work-title My Work
+    %h1.work-title MY WORK
     %ul.work-examples
       %li
         = link_to "http://www.tailorapp.com" do 
-          %h3.work-caption{:title => "Tailor"} Tailor Style Recommendation App
-          %p
-            = image_tag("tailor1.png", :alt => 'www.tailorapp.com')
+          = image_tag("tailor1.png", :alt => 'www.tailorapp.com', :class => "project-image", :width => "475px")
+      %li
+        = link_to "http://locale.herokuapp.com/" do 
+          = image_tag("locale.png", :alt => 'http://locale.herokuapp.com/', :class => "project-image", :width => "475px")
       %li
       %li
       %li
