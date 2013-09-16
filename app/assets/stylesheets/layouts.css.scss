@@ -66,18 +66,46 @@ ul {
 
 @media handheld, screen and (max-width: 1000px){
   header {
-    width: 275px;
+    width: 265px;
   }
 
 }
 
-@media handheld, screen and (max-width: 768px){
+@media handheld, screen and (max-width: 810px){
+  header {
+    position: relative;
+    min-height: 225px;
+    width: auto;
+    z-index: 999;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 35px;
+    h1 {
+      margin: 0px;
+      padding-top: 10px;
+      font-size: 35px;
+    }
+  }
 
+  .view-links {
+    margin-top: 15px;
+  }
+
+  .social-links {
+    position: absolute;
+    width: 100%;
+    top: 83%;
+    .social-icon-list {
+     i {
+        padding: 0 30px 0 15px;
+      }
+    }
+  }
 
 
 }
 
-@media handheld, screen and (max-width: 480px){
+@media handheld, screen and (max-width: 520px){
 
 
 }

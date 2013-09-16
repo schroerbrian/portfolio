@@ -47,18 +47,21 @@ p {
 @media handheld, screen and (max-width: 1000px){
 	.content {
 		height: 100%;
-		margin: 40px 0 0 295px;
+		margin: 40px 0 0 285px;
 	}
 
 }
 
-@media handheld, screen and (max-width: 768px){
-
+@media handheld, screen and (max-width: 810px){
+	.content {
+		height: 100%;
+		margin: 40px 0 0 0px;
+	}
 
 
 }
 
-@media handheld, screen and (max-width: 480px){
+@media handheld, screen and (max-width: 520px){
 
 
 }
