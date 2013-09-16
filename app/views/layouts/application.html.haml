@@ -4,14 +4,15 @@
     %title Portfolio
     %link{:href => "http://fonts.googleapis.com/css?family=Roboto:400,100,700", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", :rel=>"stylesheet"}
+    %meta{content: "user-scalable=0, initial-scale=1.0", name: "viewport"}
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
     .container
       %header
+        %h1.name-title Brian Schroer
         %nav.view-links
-          %h1 Brian Schroer
           %ul.header-links
             %li 
               = link_to "About", "/"
