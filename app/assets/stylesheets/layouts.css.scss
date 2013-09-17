@@ -78,7 +78,7 @@ ul {
 @media handheld, screen and (max-width: 810px){
   header {
     position: relative;
-    min-height: 225px;
+    min-height: 200px;
     width: auto;
     z-index: 999;
     font-weight: 400;
@@ -96,14 +96,7 @@ ul {
   }
 
   .social-links {
-    position: absolute;
-    width: 100%;
-    top: 83%;
-    .social-icon-list {
-     i {
-        padding: 0 30px 0 15px;
-      }
-    }
+    display: none;
   }
 }
 
@@ -136,9 +129,4 @@ ul {
       } 
     }
   }
-
-
-  .social-links {
-    display: none;
-    }
 }
