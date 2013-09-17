@@ -1,6 +1,11 @@
 .contact-info{
   position: relative;
-  margin-top: 135px;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 70px;
+  span.contact-me {
+    font-size: 25px;
+  }
 }
 
 .content .contact-page-links-list {
@@ -8,9 +13,56 @@
 }
 
 .contact-page-link-items a {
-  color: rgba(114, 130, 140, 1);
+  color: rgba(114, 130, 140, 0.9);
   &:hover {
-    color: rgba(114, 130, 140, 0.8);
+    color: rgba(114, 130, 140, 0.7);
+  }
+}
 
+.iphone-social-icons {
+  display: none;
+}
+
+@media handheld, screen and (max-width: 1000px){
+  .contact-info{
+    width: 85%;
+    margin-top: 70px;
+  }
+}
+
+@media handheld, screen and (max-width: 810px){
+  .contact-info{
+    width: 85%;
+    margin-top: 25px;
+  }
+}
+
+@media handheld, screen and (max-width: 520px){
+  .contact-info{
+    position: relative;
+    margin-top: 15px;
+    width: 95%;
+    span.contact-me {
+      font-size: 20px;
+    }
+  }
+
+  .content .contact-page-links-list {
+    margin: 0 0 0 0;
+    font-size: 18px;
+    display: none;
+  }
+
+  .iphone-social-links {
+    margin-top: 10px;
+    .iphone-social-icons {
+      display: inline;
+      padding-left: 5px;
+      padding-right: 5px;
+      color: rgba(114, 130, 140, 1);
+      a {
+        color: rgba(114, 130, 140, 0.9);
+      }
+    }
   }
 }

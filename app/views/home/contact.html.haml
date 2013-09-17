@@ -3,10 +3,7 @@
     %h1 Get in touch
     .contact-info
       %span.contact-me 
-        Questions? Comments? Complaints? </br>
-      %span 
-        Please don't hesitate to get in touch. 
-      %br
+        Questions? Comments? Complaints? Please don't hesitate to get in touch. 
       %br 
       %ul.contact-page-links-list
         %li.contact-page-link-items
@@ -20,4 +17,18 @@
             %span LinkedIn with me
         %li.contact-page-link-items
           = link_to "https://github.com/schroerbrian" do 
-            %span Check out my work on GitHub   
+            %span Check out my work on GitHub
+      %nav.iphone-social-links
+        %ul.iphone-social-icon-list
+          %li.iphone-social-icons
+            = link_to "https://github.com/schroerbrian" do 
+              %i.icon-github
+          %li.iphone-social-icons
+            = link_to "https://twitter.com/bumblingbees" do 
+              %i.icon-twitter
+          %li.iphone-social-icons
+            = link_to "http://www.linkedin.com/in/bschroer" do 
+              %i.icon-linkedin
+          %li.iphone-social-icons
+            = link_to "mailto:schroer.brian@gmail.com" do 
+              %i.icon-envelope-alt        
