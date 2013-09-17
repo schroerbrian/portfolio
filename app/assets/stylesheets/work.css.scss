@@ -18,8 +18,7 @@ ul.work-examples {
 
 li {
   &:hover 
-  img {
-    border-radius: 5%;
+  .project-image {
     &:hover { opacity: 0.8;
     }
   }
@@ -30,5 +29,21 @@ li {
   border: rgba(114, 130, 140, 1) solid 5px;
   border-radius: 5%;
 }
+
+@media handheld, screen and (max-width: 520px){
+
+  .work-links {
+    max-width: 300px;
+    margin: 0 auto;
+    .project-image {
+      width: 100%; 
+      margin-bottom: 10px;
+      margin-left: -5px;  
+      border: rgba(114, 130, 140, 1) solid 3px;
+    }
+  }
+
+}
+
 
 
