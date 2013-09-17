@@ -11,6 +11,9 @@ header {
   letter-spacing: 2px;
   line-height: 35px;
   color: white;
+  h1 {
+    font-style: normal;
+  }
 }
 
 .name-title {
@@ -101,11 +104,40 @@ ul {
       }
     }
   }
-
-
 }
 
 @media handheld, screen and (max-width: 520px){
+  header {
+    min-height: 130px;
+    width: 100%;
+    z-index: 999;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 35px;
+    h1 {
+      margin: 0px;
+      padding-top: 6px;
+      font-size: 24px;
+    }
+  }
+
+  .view-links {
+    margin-top: 4px;
+    ul {
+      font-size: 16px;
+      line-height: 24px;
+      li:hover {
+        background-color: transparent;
+        color: white;
+        a:hover {
+          color: white;
+        }
+      } 
+    }
+  }
 
 
+  .social-links {
+    display: none;
+    }
 }

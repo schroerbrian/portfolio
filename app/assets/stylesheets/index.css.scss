@@ -4,4 +4,28 @@
    -webkit-border-radius:15px;
    border-radius:15px;
   margin-bottom: 22px;
+  height: 365px;
+  max-width: 365px;
+}
+
+.blurb {
+  margin: 0 105px 0 105px;
+}
+
+@media handheld, screen and (max-width: 520px){
+  .profile-pic-container{
+    width: 225px;
+    margin: 0 auto;
+  }
+
+  .profile-pic {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .blurb {
+    width: 90%;
+    margin: 0px auto;
+    line-height: 24px;
+  }
 }
