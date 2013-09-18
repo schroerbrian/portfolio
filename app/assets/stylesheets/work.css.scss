@@ -76,12 +76,17 @@ li {
   padding: 9px 5px 4px 8px;
   bottom: 39px; 
   left: 264px;
-  border: solid 3px white;
-}
-
-.icon-remove {
-  font-size: 25px;
-  color: #fff;
+  border: solid 3px rgba(255, 255, 255, 1);
+  .icon-remove {
+    font-size: 25px;
+    color: #fff;
+  }
+    &:hover {
+      border: solid 3px rgba(255, 255, 255, 0.9);
+      .icon-remove {
+        color: rgba(255, 255, 255, 0.9);
+      }
+    }
 }
 
 .example-image {
@@ -99,6 +104,14 @@ li {
   text-align: left;
   width: 85%;
 }
+
+@media handheld, screen and (max-width: 1000px){
+
+  .work-examples-modal {
+    right: 17%;
+  }
+}
+
 @media handheld, screen and (max-width: 520px){
 
   .work-links {

@@ -11,7 +11,7 @@ header {
   letter-spacing: 2px;
   line-height: 35px;
   color: white;
-  h {
+  h1 {
     font-style: normal;
     color: #8CC6FF;
   }
@@ -110,8 +110,10 @@ ul {
 }
 
 @media handheld, screen and (max-width: 520px){
+  html {-webkit-text-size-adjust: none;}
+
   header {
-    min-height: 130px;
+    min-height: 145px;
     width: 100%;
     h1 {
       padding-top: 6px;
