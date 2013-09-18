@@ -10,15 +10,14 @@ header {
   font-weight: 400;
   letter-spacing: 2px;
   line-height: 35px;
-  color: white;
-  h1 {
-    font-style: normal;
-    color: #8CC6FF;
-  }
 }
 
 .name-title {
   color: white;
+  font-size: 35px;
+  margin-top: 40px;
+  font-style: normal;
+  color: #fff;
 }
 
 .view-links {
@@ -31,10 +30,15 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 19px;
+  font-size: 24px;
+  line-height: 45px;
   a {
       text-decoration: none;
       color: white;
+      transition: all 0.4s ease;
+  }
+  li {
+    transition: all 0.2s ease;
   }
   li:hover {
     background-color: white;
@@ -84,7 +88,7 @@ ul {
     font-weight: 400;
     letter-spacing: 2px;
     line-height: 35px;
-    h1 {
+    .name-title {
       margin: 0px;
       padding-top: 10px;
       font-size: 35px;
@@ -92,8 +96,9 @@ ul {
   }
 
   .view-links {
-    margin-top: 15px;
+    margin-top: 10px;
     ul {
+      line-height: 35px;
       li:hover {
         background-color: transparent;
         color: white;
@@ -115,7 +120,7 @@ ul {
   header {
     min-height: 145px;
     width: 100%;
-    h1 {
+    .name-title {
       padding-top: 6px;
       font-size: 24px;
     }

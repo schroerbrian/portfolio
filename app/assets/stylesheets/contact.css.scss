@@ -10,6 +10,7 @@
 
 .content .contact-page-links-list {
   margin: 15px 0 0 0;
+  display: none;
 }
 
 .contact-page-link-items a {
@@ -19,8 +20,18 @@
   }
 }
 
-.iphone-social-icons {
-  display: none;
+.iphone-social-links {
+  margin-top: 30px;
+  .iphone-social-icons {
+    display: inline;
+    font-size: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgba(114, 130, 140, 1);
+    a {
+      color: rgba(114, 130, 140, 0.9);
+    }
+  }
 }
 
 @media handheld, screen and (max-width: 1000px){
@@ -46,8 +57,6 @@
     margin-top: 15px;
     .iphone-social-icons {
       display: inline;
-      padding-left: 5px;
-      padding-right: 5px;
       color: rgba(114, 130, 140, 1);
       a {
         color: rgba(114, 130, 140, 0.9);
@@ -63,6 +72,12 @@
     width: 95%;
     span.contact-me {
       font-size: 20px;
+    }
+  }
+  .iphone-social-links {
+    .iphone-social-icons {
+      font-size: 25px;
+      
     }
   }
 }

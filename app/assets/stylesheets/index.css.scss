@@ -12,6 +12,13 @@
   margin: 0 105px 0 105px;
 }
 
+.created-by {
+  font-size: 12px;
+  margin-bottom: 1px;
+  color: rgba(114, 130, 140, 0.9);
+
+}
+
 @media handheld, screen and (max-width: 520px){
   .profile-pic-container{
     width: 225px;
@@ -27,7 +34,6 @@
   .blurb {
     width: 90%;
     margin: 0px auto;
-    padding-bottom: 20px;
     line-height: 24px;
   }
 }
