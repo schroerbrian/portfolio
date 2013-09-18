@@ -4,10 +4,13 @@
     %h1.work-title My Work
     %ul.work-examples
       %li.work-links
-        = link_to "#" do 
+        = link_to "#", :class => "tailor-anchor" do 
           = image_tag("tailor1.png", :alt => 'www.tailorapp.com', :class => ["project-image", "tailor-image"], :width => "475px")
       %li.work-links
-        = link_to "http://locale.herokuapp.com/" do 
+        = link_to "#", :class => "locale-anchor" do 
           = image_tag("locale.png", :alt => 'http://locale.herokuapp.com/', :class => ["project-image", "locale-image"], :width => "475px")
+      %li.work-links
+        = link_to "#", :class => "grooves-anchor" do 
+          = image_tag("grooves.png", :alt => 'http://grooves.herokuapp.com/', :class => ["project-image", "grooves-image"], :width => "475px")
     = render partial: "modal" 
     
