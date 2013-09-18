@@ -1,13 +1,20 @@
+.overlay
 %section.work
   .content
     %h1.work-title My Work
     %ul.work-examples
       %li.work-links
-        = link_to "http://www.tailorapp.com" do 
-          = image_tag("tailor1.png", :alt => 'www.tailorapp.com', :class => "project-image", :width => "475px")
+        = link_to "#" do 
+          = image_tag("tailor1.png", :alt => 'www.tailorapp.com', :class => ["project-image", "tailor-image"], :width => "475px")
       %li.work-links
         = link_to "http://locale.herokuapp.com/" do 
           = image_tag("locale.png", :alt => 'http://locale.herokuapp.com/', :class => "project-image", :width => "475px")
-    .work-examples-modal
+    .work-examples-modal.tailor-modal
       .title-header
-
+        %h2 TAILOR
+        .remove-button
+          %i.icon-remove
+      .example-image
+        = link_to "http://www.tailorapp.com" do 
+          = image_tag("tailor1.png", :alt => 'www.tailorapp.com', :class => "modal-project-image", :width => "600px")
+        .modal-project-blurb Our team used the Yelp and Zappo’s APIs to build a clothing recommendation engine, which suggested specific Zappo’s items for nightlife venues around San Francisco. We used HTML, CSS, Rails and jQuery.

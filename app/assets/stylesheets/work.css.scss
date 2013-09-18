@@ -26,19 +26,79 @@ li {
 
 .project-image{
   margin-bottom: 20px;
-  border: rgba(114, 130, 140, 1) solid 5px;
+  border: rgba(114, 130, 140, 1) solid 3px;
   border-radius: 5%;
 }
 
-.work-examples-modal {
+//MODAL
 
+.overlay {
+  display: none;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.9); 
+}
+
+.work-examples-modal {
+  display: none; 
+  position: absolute;
+  width: 600px;
+  height: 700px;
+  top: 35px;
+  right: 24%;
+  background: #fff;
+  z-index: 1983;
 }
 
 .title-header {
-
+  height: 10%;
+  background-color: rgba(44, 62, 80, 1);
+  h2 {
+    position: relative;
+    top: 18px;
+    right: 225px;
+    margin-top: 0px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;   
+  }
 }
 
+.remove-button {
+  display: inline; 
+  position: relative;
+  padding: 9px 5px 4px 8px;
+  bottom: 39px; 
+  left: 264px;
+  border: solid 3px white;
+}
 
+.icon-remove {
+  font-size: 25px;
+  color: #fff;
+}
+
+.example-image {
+  height: 50%;
+  margin-top: 7.5%;
+  .modal-project-image {
+    border-top: rgba(114, 130, 140, 1) solid 3px; 
+    border-bottom: rgba(114, 130, 140, 1) solid 3px;
+    &:hover { opacity: 0.8; }
+  }
+}
+
+.modal-project-blurb {
+  margin: 5% auto;
+  text-align: left;
+  width: 85%;
+}
 @media handheld, screen and (max-width: 520px){
 
   .work-links {
