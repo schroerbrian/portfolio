@@ -105,8 +105,28 @@ li {
   width: 85%;
 }
 
-@media handheld, screen and (max-width: 1000px){
+.button-links {
+  position: relative;
+  width: 85%;
+  height: 40px;
+  margin: 0 auto;
+  top: 155px;
+  a {
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 8%;
+    float: left;
+    background: lightblue;
+    color: grey;
+    text-decoration: none;
+  }
+  .github {
+    margin-left: 2.5%;
+  }
+}   
 
+@media handheld, screen and (max-width: 1000px){
   .work-examples-modal {
     right: 17%;
   }
