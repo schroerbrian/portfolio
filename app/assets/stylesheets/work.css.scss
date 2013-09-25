@@ -2,7 +2,6 @@
 
 .work-title {
   margin: 5% 0 5% 0;
-  font-size: 45px;
 }
 
 ul.work-examples {
@@ -120,6 +119,11 @@ li {
     background: lightblue;
     color: grey;
     text-decoration: none;
+    &:hover {
+      background: lightblue;
+      opacity: 0.9;
+    }
+    cursor: default;
   }
   .github {
     margin-left: 2.5%;
