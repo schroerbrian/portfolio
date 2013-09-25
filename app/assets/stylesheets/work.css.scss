@@ -102,12 +102,12 @@ li {
 
 .example-image {
   height: 50%;
-  margin-top: 4.5%;
   .modal-project-image {
     width: 600px;
-    border-top: rgba(114, 130, 140, 1) solid 3px; 
-    border-bottom: rgba(114, 130, 140, 1) solid 3px;
     &:hover { opacity: 0.9; }
+  }
+  .locale-iphone-image {
+    width: 250px;
   }
 }
 
@@ -155,6 +155,9 @@ li {
     height: 40%;
     .modal-project-image {
       width: 80%;
+    }
+    .locale-iphone-image {
+      width: 270px;
     }
   }
 
@@ -215,6 +218,18 @@ li {
     .modal-project-image {
       width: 100%;
     }
+  }
+
+  .locale-iphone-container {
+    margin-top: 0px;
+    .locale-iphone-image {
+      width: 250px;
+      margin-right: 10px;
+    }
+  }
+
+  .blurb-locale {
+    margin: 0 auto 5%;
   }
 
 }
