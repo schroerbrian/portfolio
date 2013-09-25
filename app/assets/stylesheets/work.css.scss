@@ -24,7 +24,8 @@ li {
 }
 
 //MODAL
-.work-examples-wrapper {
+.work-examples-wrapper-t, .work-examples-wrapper-g,
+.work-examples-wrapper-l {
   display: none;
   position: fixed;
   top: 0;
@@ -55,15 +56,13 @@ li {
 .work-examples-modal {
   display: none; 
   width: 600px;
-  height: 700px;
-  top: 35px;
-  right: 24%;
+  margin: 20px auto;
   background: #fff;
   z-index: 1983;
 }
 
 .title-header {
-  height: 9%;
+  height: 60px;
   background-color: rgba(44, 62, 80, 1);
   h2 {
     position: relative;
@@ -121,7 +120,7 @@ li {
 .button-links {
   width: 85%;
   height: 40px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   a {
     width: 40%;
     height: 40px;
@@ -142,18 +141,14 @@ li {
 }   
 
 @media handheld, screen and (max-width: 1000px){
-  .work-examples-modal {
-    right: 17%;
-  }
+
 }
 
 @media handheld, screen and (max-width: 810px){
 
   .work-examples-modal {
     display: none; 
-    width: 100%;
-    right: 0; 
-    top: -155px;
+    width: 95%;
   }
 
   .example-image {
@@ -162,18 +157,6 @@ li {
       width: 80%;
     }
   }
-
-  // .work-examples-modal {
-  //   display: none; 
-  //   position: absolute;
-  //   width: 600px;
-  //   height: 700px;
-  //   top: 35px;
-  //   right: 24%;
-  //   background: #fff;
-  //   z-index: 1983;
-  // }
-
 
   .remove-button {
     left: 93%;
@@ -188,11 +171,13 @@ li {
     text-align: left;
     width: 85%;
   }
-
 }
 
 
 @media handheld, screen and (max-width: 520px){
+
+  .work-examples-modal {
+  }
 
   .work-links {
     max-width: 300px;
@@ -207,13 +192,13 @@ li {
 
   .title-header {
     h2{
-      top: 26px;
+      // top: 26px;
     }
   }
 
   .remove-button {
     left: 89%;
-    bottom: 25px;
+    bottom: 42px;
     width: 10px;
     height: 10px;
     padding: 7px;
