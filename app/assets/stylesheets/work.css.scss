@@ -142,37 +142,31 @@ ul.language-tags{
     display: inline-block;
     padding: 5px;
     margin-right: 10px;
-    background: rgba(4,32,47,0.1);
     margin-bottom: 20px;
+    border: solid 1px #72828c;
     font-size: 15px;
     line-height: 20px;
   }
 }
 
-.prev {
+.prev, .next {
   position: fixed;
   top: 50%;
-  left: 13%;
   background: transparent;
   border: none;
-  font-size: 80px;
+  font-size: 75px;
   color: #72828c;
   &:hover {
     color: rgba(44, 62, 80, .7);
   }
 }
 
+.prev {
+  left: 13%;
+}
+
 .next {
-  position: fixed;
-  top: 50%;
   right: 14%;
-  background: transparent;
-  border: none;
-  font-size: 80px;
-  color: #72828c;
-  &:hover {
-    color: rgba(44, 62, 80, .7);
-  }
 }
 
 @media handheld, screen and (max-width: 1000px){
@@ -191,7 +185,6 @@ ul.language-tags{
 @media handheld, screen and (max-width: 810px){
 
   .work-examples-modal {
-    display: none; 
     width: 95%;
   }
 
