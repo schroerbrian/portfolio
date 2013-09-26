@@ -112,7 +112,7 @@ li {
 }
 
 .modal-project-blurb {
-  margin: 2% auto;
+  margin: 2% auto 20px;
   text-align: left;
   width: 85%;
 }
@@ -120,7 +120,7 @@ li {
 .button-links {
   width: 85%;
   height: 40px;
-  margin: 0 auto 20px;
+  margin: 0 auto 25px;
   a {
     width: 40%;
     height: 40px;
@@ -139,6 +139,20 @@ li {
     margin-left: 2.5%;
   }
 }   
+
+ul.language-tags{
+  display: block;
+  text-align: center;
+  li {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 10px;
+    background: rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
 
 @media handheld, screen and (max-width: 1000px){
 
@@ -230,6 +244,19 @@ li {
 
   .blurb-locale {
     margin: 0 auto 5%;
+  }
+
+  .button-links {
+    margin-bottom: 15px;
+  }
+
+  ul.language-tags{
+    li {
+      padding: 5px;
+      margin-bottom: 7px;
+      font-size: 10px;
+      line-height: 15px;
+    }
   }
 
 }

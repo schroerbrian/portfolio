@@ -98,13 +98,19 @@ ul {
     margin-top: 10px;
     ul {
       line-height: 35px;
-      li:hover {
-        background-color: transparent;
-        color: white;
-        a {
-          color: white;
-        }
-      } 
+    }
+  }
+
+  .header-links a.active {
+    display: inline;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .header-links a {
+    &:hover {
+      background-color: transparent;
+      color: white;
     }
   }
 
