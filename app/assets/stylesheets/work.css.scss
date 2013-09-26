@@ -50,7 +50,7 @@ li {
 }
 
 .work-examples-modal {
-  display: none; 
+  // display: none; 
   width: 600px;
   margin: 20px auto;
   background: #fff;
@@ -129,7 +129,6 @@ li {
     &:hover {
       background:  rgba(80,113,145, .9);
     }
-    cursor: default;
   }
   .github {
     margin-left: 2.5%;
@@ -143,14 +142,49 @@ ul.language-tags{
     display: inline-block;
     padding: 5px;
     margin-right: 10px;
-    background: rgba(200,32,47,0.2);
+    background: rgba(4,32,47,0.1);
     margin-bottom: 20px;
     font-size: 15px;
     line-height: 20px;
   }
 }
 
+.prev {
+  position: fixed;
+  top: 50%;
+  left: 13%;
+  background: transparent;
+  border: none;
+  font-size: 80px;
+  color: #72828c;
+  &:hover {
+    color: rgba(44, 62, 80, .7);
+  }
+}
+
+.next {
+  position: fixed;
+  top: 50%;
+  right: 14%;
+  background: transparent;
+  border: none;
+  font-size: 80px;
+  color: #72828c;
+  &:hover {
+    color: rgba(44, 62, 80, .7);
+  }
+}
+
 @media handheld, screen and (max-width: 1000px){
+
+  .prev {
+    left: 4%;
+  }
+
+  .next {
+    right: 6%;
+  }
+
 
 }
 
@@ -184,8 +218,11 @@ ul.language-tags{
     text-align: left;
     width: 85%;
   }
-}
 
+  .prev, .next {
+    display: none;
+  }
+}
 
 @media handheld, screen and (max-width: 520px){
 
