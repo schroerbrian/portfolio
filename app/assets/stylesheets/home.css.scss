@@ -26,6 +26,12 @@ p {
 	line-height: 30px;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+	transition: all 0.4s ease;
+}
+
 .content {
 	height: 100%;
 	margin: 40px 0 0 370px;

@@ -14,14 +14,14 @@
         %h1.name-title Brian Schroer
         %nav.view-links
           %ul.header-links
-            %li 
-              = link_to "About", "/"
-            %li 
-              = link_to "Work", work_path
-            %li
-              = link_to "Resume", "/brianschroer.pdf"
-            %li
-              = link_to "Contact", contact_path
+            %li.header-list-item 
+              = link_to "About", "/", :class => "header-link"
+            %li.header-list-item  
+              = link_to "Work", work_path,  :class => "header-link"
+            %li.header-list-item 
+              = link_to "Resume", "/brianschroer.pdf",  :class => "header-link"
+            %li.header-list-item 
+              = link_to "Contact", contact_path,  :class => "header-link"
         %nav.social-links
           %ul.social-icon-list
             %li.social-icons
