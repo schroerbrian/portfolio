@@ -5,14 +5,23 @@ var ready;
 ready = function() {
   
   //INITIALIZE MODALS. REMOVE THEM
-  // function initializeModal(clickedClass, )
+  function initializeModal(clickedHandler, shownModal, overlay) {
+    $(clickedHandler).on('click', function(event){
+      event.preventDefault();
+      $(shownModal).css('display', 'block');
+      $(overlay).fadeIn(300);
+    });
+  }
+
+  initializeModal('.tailor-anchor', '.work-examples-wrapper-t', '.overlay'); 
+
   //TAILOR
-  $('.tailor-anchor').on('click', function(event){
-    event.preventDefault();
-    $('.work-examples-wrapper-t').css('display', 'block');
-    // $('.tailor-modal').fadeIn(300);
-    $('.overlay').fadeIn(300);
-  });
+  // $('.tailor-anchor').on('click', function(event){
+  //   event.preventDefault();
+  //   $('.work-examples-wrapper-t').css('display', 'block');
+  //   // $('.tailor-modal').fadeIn(300);
+  //   $('.overlay').fadeIn(300);
+  // });
 
   $('.remove-tailor').on('click', function(event){
     event.preventDefault();
