@@ -15,10 +15,16 @@ body {
 }
 
 h1 {
-	font-size: 35px;
+	font-family: helvetica;
+	font-weight: 300;
+}
+
+.section-title {
+	font-size: 40px;
 	color: rgba(44, 62, 80, 1);
 	font-family: helvetica;
 	font-weight: 300;
+	letter-spacing: 2px;
 }
 
 p {
@@ -58,6 +64,10 @@ a {
 	.content {
 		height: 100%;
 		margin: 40px 0 0 0px;
+	}
+
+	.section-title {
+		font-size: 35px;
 	}
 }
 
